@@ -1,0 +1,21 @@
+CREATE DATABASE mi_app;
+USE mi_app;
+
+CREATE TABLE registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    imagen VARCHAR(255) NOT NULL
+);
+
+
+------------------------------------------------------------------------
+
+
+/mi_app/
+│
+├── index.php           ← Página principal: muestra registros
+├── add.php             ← Formulario para agregar registro
+├── edit.php            ← Página para editar un registro
+├── delete.php          ← Eliminar registro
+├── db.php              ← Conexión a la base de datos
+├── /images/            ← Carpeta para guardar imágenes
